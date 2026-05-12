@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <span class="sidebar__brand-icon">■</span>
+                <div>
+                    <h1>Workspace</h1>
+                    <p>Productivity Suite</p>
+                </div>
+            </div>
+            <nav class="sidebar__nav">
+                <button class="nav-item nav-item--active">Inbox</button>
+                <button class="nav-item">Board</button>
+                <button class="nav-item">Dashboard</button>
+            </nav>
+            <button class="sidebar__add-task">+ Add Task</button>
+            <div class="sidebar__footer">
+                <button class="footer-btn">Help</button>
+                <button class="footer-btn">Archived</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Q4 Roadmap Implementation</p>
+                    <h2>Project Board</h2>
+                </div>
+                <div class="topbar__actions">
+                    <div class="search-input">
+                        <span>🔍</span>
+                        <input type="search" placeholder="Search tasks...">
+                    </div>
+                    <button class="icon-btn">🔔</button>
+                    <button class="icon-btn">⚙️</button>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <section class="board-grid">
+                <article class="board-column" id="todoColumn">
+                    <header class="column-header">
+                        <h3>To Do</h3>
+                        <span class="badge">4</span>
+                    </header>
+                    <div class="task-card task-card--urgent">
+                        <span class="task-label">Urgent</span>
+                        <h4>Define brand guidelines for mobile application</h4>
+                        <p>Ensure consistency across all UI components and typography scales defined in the system.</p>
+                        <div class="task-footer">
+                            <span>12</span>
+                            <span>Oct 24</span>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <span class="task-label task-label--blue">Design</span>
+                        <h4>Refine task card hover interactions</h4>
+                        <div class="task-footer task-footer--icons">
+                            <span>2</span>
+                            <div class="avatar avatar--small">M</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="board-column">
+                    <header class="column-header">
+                        <h3>In Progress</h3>
+                        <span class="badge badge--secondary">2</span>
+                    </header>
+                    <div class="task-card task-card--active">
+                        <span class="task-label task-label--purple">Engineering</span>
+                        <h4>Integrate Material Design symbols library</h4>
+                        <p>Mapping all icon strings from the backend JSON to frontend components.</p>
+                        <div class="task-footer task-footer--avatars">
+                            <div class="avatars-group">
+                                <div class="avatar avatar--small">J</div>
+                                <div class="avatar avatar--small">L</div>
+                            </div>
+                            <span class="status-pill">Active</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="board-column">
+                    <header class="column-header">
+                        <h3>Done</h3>
+                        <span class="badge badge--success">8</span>
+                    </header>
+                    <div class="task-card task-card--done">
+                        <span class="task-label task-label--gray">Release</span>
+                        <h4>System-wide typography update</h4>
+                        <p>Completed Oct 12</p>
+                        <div class="task-footer task-footer--right">
+                            <div class="avatar avatar--small">S</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="components/app.js"></script>
+</body>
+</html>
